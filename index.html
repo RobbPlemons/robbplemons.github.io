@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robb Plemons | Senior Project & Program Manager</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="logo">Robb Plemons</div>
+<nav>
+<a href="#about">About</a>
+<a href="#achievements">Achievements</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+<button id="theme-toggle">🌙</button>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<h1>Senior Project & Program Manager</h1>
+<p>15+ years delivering enterprise technology programs, modernization initiatives, system implementations, and digital transformation.</p>
+<a class="btn" href="#contact">Let's Connect</a>
+</div>
+</section>
+<section id="about" class="section">
+<div class="container">
+<h2>About</h2>
+<p>Technology leader with experience leading cross-functional initiatives, enterprise portfolios, system implementations, acquisition integrations, and business transformation efforts across global organizations.</p>
+</div></section>
+<section id="achievements" class="section alt"><div class="container"><h2>Featured Results</h2><div class="grid">
+<div class="card"><h3>$10M Portfolio</h3><p>Led enterprise technology delivery across 16 teams and 160 professionals.</p></div>
+<div class="card"><h3>92% Predictability</h3><p>Improved delivery predictability from 77% to 92%.</p></div>
+<div class="card"><h3>$3M Program</h3><p>Delivered enterprise forecasting modernization initiative.</p></div>
+<div class="card"><h3>3,500 Employees</h3><p>Enterprise compensation rollout with zero payroll disruption.</p></div>
+</div></div></section>
+<section id="experience" class="section"><div class="container"><h2>Experience</h2>
+<div class="card"><h3>CDW | Release Train Engineer</h3><p>Enterprise delivery leadership, digital transformation, risk management, executive stakeholder engagement.</p></div>
+<div class="card"><h3>CDW | Program Manager</h3><p>Modernization programs, acquisition integrations, vendor management, governance.</p></div>
+<div class="card"><h3>Capital One</h3><p>Large-scale financial technology and operational transformation initiatives.</p></div>
+<div class="card"><h3>CSG Systems</h3><p>Custom software development and implementation leadership.</p></div>
+</div></section>
+<section id="skills" class="section alt"><div class="container"><h2>Core Competencies</h2><div class="tags"><span>Program Management</span><span>Portfolio Management</span><span>Digital Transformation</span><span>Technology Modernization</span><span>Vendor Management</span><span>Risk Management</span><span>Azure DevOps</span><span>ServiceNow</span><span>Tableau</span><span>Microsoft 365</span></div></div></section>
+<section id="contact" class="section"><div class="container"><h2>Contact</h2><p>Email: robbplemons@gmail.com</p><p>LinkedIn: linkedin.com/in/robb-plemons</p></div></section>
+<script>
+const b=document.getElementById('theme-toggle');
+const s=localStorage.getItem('theme');
+if(s==='dark'){document.documentElement.setAttribute('data-theme','dark');b.textContent='☀️';}
+b.onclick=()=>{const d=document.documentElement.getAttribute('data-theme');if(d==='dark'){document.documentElement.removeAttribute('data-theme');localStorage.setItem('theme','light');b.textContent='🌙';}else{document.documentElement.setAttribute('data-theme','dark');localStorage.setItem('theme','dark');b.textContent='☀️';}};
+</script>
+</body></html>
